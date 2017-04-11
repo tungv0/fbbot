@@ -1,6 +1,6 @@
 {
-    "appSecret": "a",
-    "pageAccessToken": "b",
+    "appSecret": "638923502967930",
+    "pageAccessToken": "EAAJFGPhu3HoBAPwrhk2ETFBjZBZBZAmxfKa8jV7iwHE4I7GMcargdNWVcbYVglSmsAube1nigwCdvfqyRENXj0GRNa08CmBJM7A8affHthQ4aTSXpqYAg79M7bYKlA7SvqjqihainEZBBjyujV4DImeBt1f8ZCgV014lu1RkbEwZDZD",
     "validationToken": "series7",
-    "serverURL": "d"
+    "serverURL": "https://young-caverns-72923.herokuapp.com/webhook"
 }
