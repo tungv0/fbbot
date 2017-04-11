@@ -1,6 +1,6 @@
 {
     "appSecret": "67143a3800d1d477f33917bb49abd11c",
-    "pageAccessToken": "EAAJFGPhu3HoBANL3vicfyQgSzSJAt60wk897zp7RHt61HSrThZCIZBWVLaOxiQlaRo8bBXGiUFz9t3SWGX3dCvtk0WBRWYZAwIRxcHL9R2bcFQAqXTQXh3J2D6OkzuZA9jZApewyaNAxqLtr6YlHUYpRUgzsMZCyS0x1uoGin79AZDZD",
+    "pageAccessToken": "EAAJFGPhu3HoBAAxKja0LaxZC9hzqg92tk8N6DfN4ZCIbHw5jTV74dj2i09cJCXKIZCV2cilPAzFxJN0Goziqb4ZBZBF4TQYU2W8UdxX5xLJIyqMYRENrTq90BLMO8WMVSc8WPljcluHwWCIqZCXkERym94Fpg7ExHAUG8kf7VbxAZDZD",
     "validationToken": "series7",
     "serverURL": "https://young-caverns-72923.herokuapp.com/webhook"
 }
