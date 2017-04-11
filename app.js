@@ -780,7 +780,7 @@ function sendQuickReply(recipientId) {
         },
         {
           "content_type": "text",
-          "title": question.choices[1],
+          "title": question.choices[1].text,
           "payload": question.choices[1].payload
         },
         {
@@ -790,7 +790,7 @@ function sendQuickReply(recipientId) {
         },
         {
           "content_type": "text",
-          "title": question.choices[3],
+          "title": question.choices[3].text,
           "payload": question.choices[3].payload
         }
       ]
