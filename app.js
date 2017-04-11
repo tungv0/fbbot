@@ -335,8 +335,8 @@ function receivedMessage(event) {
 
 function selectQuestion() {
 
-  const high = 2
-  const low = 1
+  const high = 1
+  const low = 0
   const questions = [{
       id: "001",
       text: "A client of yours with a conservative level of \
@@ -766,6 +766,7 @@ function sendReceiptMessage(recipientId) {
  */
 function sendQuickReply(recipientId) {
   var question = selectQuestion()
+  console.log(question)
   var messageData = {
     recipient: {
       id: recipientId
