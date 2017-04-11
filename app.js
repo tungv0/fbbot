@@ -325,8 +325,8 @@ function selectQuestion() {
     text:"A client of yours with a conservative level of \
           tolerance for systematic risk and a fairly long time horizon has \
           indicated that she would prefer to avoid substantial portfolio turnover. \
-          Your suitable recommendation would most likely be"]
-    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."]
+          Your suitable recommendation would most likely be",
+    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."],
     answer: 1 
   }, 
   {
@@ -334,8 +334,8 @@ function selectQuestion() {
     text:"A client of yours with an aggressive level of \
           tolerance for systematic risk and a fairly short time horizon has \
           indicated that she would prefer to avoid substantial portfolio turnover. \
-          Your suitable recommendation would most likely be"]
-    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."]
+          Your suitable recommendation would most likely be",
+    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."],
     answer: 3 
   }]
   
