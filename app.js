@@ -316,6 +316,32 @@ function receivedMessage(event) {
 }
 
 
+function selectQuestion() {
+  
+  const high = 2
+  const low = 1
+  const questions = [{
+    id: "001",
+    text:"A client of yours with a conservative level of \
+          tolerance for systematic risk and a fairly long time horizon has \
+          indicated that she would prefer to avoid substantial portfolio turnover. \
+          Your suitable recommendation would most likely be"]
+    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."]
+    answer: 1 
+  }, 
+  {
+    id: "002",
+    text:"A client of yours with an aggressive level of \
+          tolerance for systematic risk and a fairly short time horizon has \
+          indicated that she would prefer to avoid substantial portfolio turnover. \
+          Your suitable recommendation would most likely be"]
+    choices: ["a tactical strategy.", "a passive strategy.", "an aggressive strategy.", "a hedged strategy."]
+    answer: 3 
+  }]
+  
+  return questions[Math.floor(Math.random() * (high - low + 1) + low)]
+}
+
 /*
  * Delivery Confirmation Event
  *
@@ -690,22 +716,23 @@ function sendReceiptMessage(recipientId) {
  *
  */
 function sendQuickReply(recipientId) {
+  var question = selectQuestion()
   var messageData = {
     recipient: {
       id: recipientId
     },
     message: {
-      text: "What's your favorite movie genre?",
+      text: question.text,
       quick_replies: [
         {
           "content_type":"text",
-          "title":"Action",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
+          "title":question.choices[0],
+          "payload":"Incorrect"
         },
         {
           "content_type":"text",
-          "title":"Comedy",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_COMEDY"
+          "title":question.choices[1],
+          "payload":"Correct"
         },
         {
           "content_type":"text",
