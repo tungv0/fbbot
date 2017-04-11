@@ -1,0 +1,6 @@
+{
+    "appSecret": "a",
+    "pageAccessToken": "b",
+    "validationToken": "c",
+    "serverURL": "d"
+}
