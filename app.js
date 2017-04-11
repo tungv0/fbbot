@@ -245,6 +245,22 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 
+    if (quickReplyPayload) {
+    
+      switch(quickReplyPayload) {
+        case 'Incorrect':
+          sendTextMessage(senderID, "That's incorrect. Please try another question!");
+          break;
+
+        case 'Correct':
+          sendTextMessage(senderID, "Great job! Want to try another question?");
+          break;
+
+        default:
+          sendTextMessage(senderID, "Huh?");
+      }
+    }
+
     sendTextMessage(senderID, "Quick reply tapped");
     return;
   }
@@ -287,7 +303,7 @@ function receivedMessage(event) {
         sendReceiptMessage(senderID);
         break;
 
-      case 'quick reply':
+      case 'question':
         sendQuickReply(senderID);
         break;        
 
