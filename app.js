@@ -250,16 +250,12 @@ function receivedMessage(event) {
     if (quickReplyPayload) {
 
       switch (quickReplyPayload) {
-        case 'Incorrect':
-          sendTextMessage(senderID, "That's incorrect. Please try another question!");
-          break;
-
         case 'Correct':
           sendTextMessage(senderID, "Great job! Want to try another question?");
           break;
 
         default:
-          sendTextMessage(senderID, "Huh?");
+          sendTextMessage(senderID, quickReplyPayload);
       }
     }
 
@@ -345,7 +341,7 @@ function selectQuestion() {
           Your suitable recommendation would most likely be",
       choices: [{
           text: "a tactical strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: a passive strategy."
         },
         {
           text: "a passive strategy.",
@@ -353,11 +349,11 @@ function selectQuestion() {
         },
         {
           text: "an aggressive strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: a passive strategy."
         },
         {
           text: "a hedged strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: a passive strategy."
         }
       ]
     },
@@ -369,11 +365,11 @@ function selectQuestion() {
           Your suitable recommendation would most likely be",
       choices: [{
           text: "a tactical strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: an aggressive strategy."
         },
         {
           text: "a passive strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: an aggressive strategy"
         },
         {
           text: "an aggressive strategy.",
@@ -381,7 +377,7 @@ function selectQuestion() {
         },
         {
           text: "a hedged strategy.",
-          payload: "Incorrect"
+          payload: "Sorry, That's incorrect. Correct answer: an aggressive strategy"
         }
       ]
     }
